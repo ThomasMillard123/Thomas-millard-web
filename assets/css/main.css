@@ -659,6 +659,9 @@ input, select, textarea {
 			width: 100%;
 		}
 
+    .image.center{
+			padding-right: 25%;
+		}
 		.image img {
 			border-radius: 4px;
 			display: block;
