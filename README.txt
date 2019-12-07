@@ -1,7 +1,7 @@
 Dimension by HTML5 UP
 This website is a  for Thomas Millard
 His work will be placed on there for people to see.
-the site was created by using a template from HTML5up.
+The site was created by using a template from HTML5up.
 
 
 html5up.net | @ajlkn
