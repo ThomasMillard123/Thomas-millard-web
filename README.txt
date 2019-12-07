@@ -1,4 +1,9 @@
 Dimension by HTML5 UP
+This website is a  for Thomas Millard
+His work will be placed on there for people to see.
+the site was created by using a template from HTML5up.
+
+
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
