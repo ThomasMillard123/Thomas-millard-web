@@ -59,30 +59,30 @@
 							<article id="work">
 								<h2 class="major">Work</h2>
 
-								<p>These are the projects I have done and projects I am currently doing.</p>
+								<p>These are the projects I have done and projects I am currently doing. Also future projects I plan on doing.</p>
 
 							<section>
 								<h3>Molecularity </h3>
-								<span class=""><img src="images/dCube.png" alt="" /></span>
-								<p>This game is a group created game called Molecularity.The game is about changeing a cubes propites useing a multi-tool to solve levels,a play throught can be found here on <a href="https://vimeo.com/558943103">vimeo</a>(video below).
-									It was created for a university assignment.It is done using DirectX and C++. Some of the feacures of the game are:</p>
+								<span class=""><img src="images/TitleCard.png" alt="" /></span>
+								<p>This game is a group created game called Molecularity.The game is about changing  a cubes properties using a multi-tool to solve levels, a play through  can be found here on <a href="https://vimeo.com/558943103">vimeo</a>(video below).
+									It was created for a university assignment. It is done using DirectX and C++. Some of the features  of the game are:</p>
 								<ul>
-									<li>a main menu </li>
+									<li>A main menu </li>
 									<li>3 levels </li>
-									<li>credits </li>
-									<li>a working settings menu </li>
-									<li>a hud for the tool imfromation </li>
-									<li>built with desening patternes</li>
+									<li>Credits </li>
+									<li>A working settings menu </li>
+									<li>A hud for the tool information </li>
+									<li>Built with design patterns</li>
 								</ul>
 								<p>The multi-tool: </p>
 								<ul>
 									<li>Convert-changes the material which affects mass/density​ </li>
 									<li>Resize- enlarges or shrinks a cube which changes its hitbox and mass​</li>
 									<li>Bounce- whether the cube bounces​​</li>
-									<li>Magntism- either brings a single or all the cubes to the player​</li>
+									<li>Magnetism- either brings a single or all the cubes to the player​</li>
 									<li>Conductive- changes a cube’s conductivity​</li>
 								</ul>
-								<p>I created the UI used in the game except for the DIMGUI used for the debug mode. I also created a json loader file with rapid json to load our text and level data.The base of our tool class in the code was created by me.</p>
+								<p>I created the UI used in the game except for the DIMGUI used for the debug mode. I also created a json loader file with rapid json to load our text and level data. The base of our tool class in the code was created by me.</p>
 								<p>Other team mebers: </p>
 								<ul>
 									<li>Kyle Robinson- lead engine programmer and level programming </li>
@@ -92,30 +92,68 @@
 								</ul>
 
 								<p> You can find it at:<a href="https://github.com/kyle-robinson/molecularity">Molecularity</a></p>
+								<h3>video</h3>
 								<iframe src="https://player.vimeo.com/video/558943103" width="640" height="347" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 								<p><a href="https://vimeo.com/558943103">Molecularity</a> from <a href="https://vimeo.com/user141914046">Kyle Robinson</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-								<p>C++|Games Proggraming|DirectX 11|Win32|3D</p>
+								<p>C++|Games programmming|DirectX 11|Win32|3D</p>
 							</section>
 
 							<section>
-								<h3>FGGC </h3>
-								<span class=""><img src="images/Mario_Big.png" alt="" /></span>
-								<p>This is a engein created for a my unervisity assignment .It has been created with C++ and DirectX 11. It has:</p>
+								<h3>FGGC- sem1 and sem2 </h3>
+								<span class=""><img src="images/FGGC_Immage.png" alt="" /></span>
+								<p>This is a engine created for a my university assignment. It has been created with C++ and DirectX 11.</p>
+								<p>Sem1 key features:</p>
 								<ul>
 										<li>Shaders in HLSL</li>
 										<li>Phong and Gouraud shading</li>
 										<li>OBJ file loader</li>
 										<li>DDS file loader</li>
-										<li></li>
-										<li>Physics- incudeing:partical(newtonian) physics and rigid body physics </li>
-										<li>simple Colition detection</li>
-										<li>collition responce with </li>
-										<li></li>
-										<li>built with desening patternes</li>
+										<li>Picking</li>
+										<li>simple movement</li>
+										<li>mutiple cameras:
+											<ul>
+													<li>Static cameras</li>
+													<li>First-person camera</li>
+													<li>Third-person camera</li>
+											</ul>
+
+										</li>
+										<li>Json file loader useing <a href="https://github.com/nlohmann/json">nlohmann json parser</a></li>
+										<li>A skybox using cube mapping</li>
 								</ul>
+								<h3>video</h3>
+								<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/560108577?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+									allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FGGC Sem1 vid"></iframe>
+								</div><script src="https://player.vimeo.com/api/player.js"></script>
+								<p>Sem2 key features:</p>
+									<ul>
+											<li>Physics- including: particle  physics for object movement and rigid body physics for rotations </li>
+												<li>particle  physics uses:
+														<ul>
+																<li>Velocity</li>
+																<li>Acceleration</li>
+																<li>Drag- Laminar and Turbulent</li>
+																<li>Friction</li>
+																<li>net force accumulator</li>
+																<li>other forces such a gravity and thrust</li>
+														</ul>
+												</li>
+											<li>Simple collision detection</li>
+											<li>Collision response </li>
+											<li>Mass particle system with rain and smoke</li>
+											<li>Terrain generation useing a hight map</li>
+											<li>Input class using win32 messaging system</li>
+											<li>Built with design patterns</li>
+									</ul>
+										<h3>video</h3>
+									<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/560107601?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+										allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FGGC Sem 2 Vid"></iframe>
+									</div><script src="https://player.vimeo.com/api/player.js"></script>
 								<p> You can find it at:<a href="https://github.com/ThomasMillard123/FGAGC">FGAGC</a></p>
-								<p>C++|Games Proggraming|DirectX 11|3D</p>
+
+
+								<p>C++|Games programmming|DirectX 11|3D</p>
 							</section>
 
 							<section>
@@ -133,9 +171,17 @@
 									<li>Text within the scene</li>
 								</ul>
 								<p> You can find it at:<a href="https://github.com/ThomasMillard123/OpenGL-Project">OpenGL-Project</a></p>
-								<p>C++|Games Proggraming|OpenGL|freeGLUT|3D</p>
+								<p>C++|Games programmming|OpenGL|freeGLUT|3D</p>
 							</section>
 
+							<section>
+								<h3>future projects</h3>
+								<ul>
+									<li>C#/wpf: json/XML creator</li>
+									<li>Another Game</li>
+								</ul>
+
+							</section>
 							</article>
 
 
@@ -145,7 +191,7 @@
 								<span class="center"><img src="images/ProPic50Samll.png" alt="" /></span>
 								<p>Hello there, my name is Thomas Millard. Welcome to this website. I am a student at Staffordshire University doing a BSc (Hons) Video games programming. I hope one day I will be able to be programming video games.</p>
 								<p>Through my time in education I have learned coding language such as HTML, CSS, C#, JavaScript. I am currently learning C++ in my university studies.</p>
-								<p>Things I enjoy are video games and watching esports. The main games I like to play now are LoL (League of legends), Pokémon sword and shield and battlefield V.
+								<p>Things I enjoy are video games and watching esports. The main games I like to play now are LoL (League of legends), Pokémon sword and shield and MineCraft.
 									My favoritegame of all time could be Left for Dead 2 but other games that come close would be trove, just cause 2 multiplayer and GTA5(Grand Theft Auto v).
 									Skiing is also something else I do.</p>
 							</article>
@@ -170,7 +216,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy;Thomas Millard 1019 </p>
+						<p class="copyright">&copy;Thomas Millard 2021 </p>
 					</footer>
 
 			</div>
