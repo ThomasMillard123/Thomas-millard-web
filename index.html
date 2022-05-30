@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 	</head>
 	<body class="is-preload">
 
@@ -38,6 +39,7 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#work">Work</a></li>
 								<li><a href="#about">About</a></li>
+								<!--<li><a href="#blog">Blog</a></li>-->
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -49,7 +51,7 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/ThomasMillardHeader.png" alt="" /></span>
+								<span class="image main" ><img src="images/ThomasMillardHeader.png" alt="immage of me" /></span>
 								<p>Hello, on this website you can check out my <a href="#work">work</a> and find out a bit about <a href="#about"> me </a>.
 									There are also links to my social media below. this my twitter, LinkedIn and GitHub.</p>
 
@@ -59,11 +61,74 @@
 							<article id="work">
 								<h2 class="major">Work</h2>
 
-								<p>These are the projects I have done and projects I am currently doing. Also future projects I plan on doing.</p>
+								<p>These are the projects I have done and projects I am currently doing.</p>
+								<section>
+									<h3>Firelight</h3>
+									<span class="image main"><img src="images/TitleScreen.png" alt="Firelight" /></span>
+									<p>This game is a group created game called Firelight. It is a survival game. The engine that was created was called Firelight and a audio engine was created with FMOD called Snowfall.
+										An editor was created to help to develop on the engine but for the most part the engine is designed to work for developing in code. It was created for a university assignment in a group, and it is coded using DirectX 11 and C++. Some of the features of the game and engine are:</p>
+										<ul>
+											<li>Entity component system</li>
+											<li>Input with key bindings </li>
+											<li>Event system </li>
+											<li>AI</li>
+											<li>Resource system</li>
+											<li>Crafting</li>
+											<li>Items</li>
+											<li>An inventory system</li>
+											<li>Animation with an editor </li>
+											<li>Audio- engine and sound in the game</li>
+											<li>Combat</li>
+										</ul>
+										<p>I created and developed:</p>
+										<ul>
+											<li>The UI development system in the engine
+												<ul>
+													<li>Use the ECS to create widgets out of components</li>
+													<li>Has the ability to create widgets that are pressable, to be hovered, draggable and to have on leave functions</li>
+													<li>Widgets can also have a component that gives them to have the ability to contain children widgets</li>
+													<li>The widgets can scaled by their parent or the canvas</li>
+													<li>The widgets are also scaled to the window size</li>
+												</ul>
+											</li>
+											<li>The method  to get input to the game and engine
+														<ul>
+															<li>Uses window messages to get access to the keyboard and mouse input</li>
+															<li>Uses XInput to get input from a controller</li>
+															<li>Using events this data is communicated to other parts of the engine, like the key binder</li>
+														</ul>
+											 </li>
+											<li>The inventory system
+												<ul>
+													<li>Uses groups to allows of related inventories to be held together</li>
+													<li>Holds the entityIDs of items</li>
+													<li>The items can be held in a stack according to the item data</li>
+													<li>The slots and the background of the inventories can be customised</li>
+													<li>Data can be added to the slots to limit what items can be inserted into it</li>
+												</ul>
+											</li>
+										</ul>
+									<p>Other team members who were important in getting the project to its current state:</p>
+									<ul>
+										<li>Danny Jackson </li>
+										<li>Ben Nilsson</li>
+										<li>Fergus R Griggs</li>
+										<li>Lewis Baillie</li>
+										<li>Max A Stockton</li>
+										<li>Natalie Harvey</li>
+										<li>Kieron Tracey</li>
+									</ul>
 
+									<p> You can find it at:<a href="https://github.com/Group2IsCrap/GameEngine">Firelight</a></p>
+									<h3>video</h3>
+									<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"
+										title="Game"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+									<p>C++|Games programmming|DirectX 11|Win32|2D</p>
+								</section>
 							<section>
 								<h3>Molecularity </h3>
-								<span class=""><img src="images/TitleCard.png" alt="" /></span>
+								<span class="image main"><img src="images/TitleCard.png" alt="" /></span>
 								<p>This game is a group created game called Molecularity.The game is about changing  a cubes properties using a multi-tool to solve levels, a play through  can be found here on <a href="https://vimeo.com/558943103">vimeo</a>(video below).
 									It was created for a university assignment. It is done using DirectX and C++. Some of the features  of the game are:</p>
 								<ul>
@@ -100,87 +165,174 @@
 							</section>
 
 							<section>
-								<h3>FGGC- sem1 and sem2 </h3>
-								<span class=""><img src="images/FGGC_Immage.png" alt="" /></span>
-								<p>This is a engine created for a my university assignment. It has been created with C++ and DirectX 11.</p>
-								<p>Sem1 key features:</p>
-								<ul>
-										<li>Shaders in HLSL</li>
-										<li>Phong and Gouraud shading</li>
-										<li>OBJ file loader</li>
-										<li>DDS file loader</li>
-										<li>Picking</li>
-										<li>simple movement</li>
-										<li>mutiple cameras:
-											<ul>
-													<li>Static cameras</li>
-													<li>First-person camera</li>
-													<li>Third-person camera</li>
-											</ul>
+								<h3>Critical evaluation of current weather systems FYP</h3>
 
-										</li>
-										<li>Json file loader useing <a href="https://github.com/nlohmann/json">nlohmann json parser</a></li>
-										<li>A skybox using cube mapping</li>
-								</ul>
+								<p>This is my final year project; it is looking at the how weather is created in games and how it is used. During the exploration of other games, I saw there was lots of methods to create weather systems.
+									These different methods depended on what the game wanted to achieve or the hardware limitations of then games chosen platform.
+									For example, a simulator game would want the most complex and realistic weather possible, Microsoft flight simulator does this by using real world weather. </p>
+									<p>In the project, I looked at how real weather works and how this could be used in a games weather system.
+										I also looked at how the more realist the weather system wants to be the more resources it will use.
+										This also looked at how a weather system needs to be more immersive than realistic, so the player feels like they are in the world.
+										The artifact created was to use real world concepts to create a weather system. </p>
+										<p>The artefact created used airmass and a grid to hold data, like temperature at different hights and dew point, to create a weather.
+											This system can currently create fog, precipitation (snow, hail, and rain) and clouds.
+											The air masses work well in creating weather fronts for where the weather effects appeared. However, the gid limited how the weather effects were represent as it held a lot of data needed.
+											If the project was going to be improved the removal of the gid would be done in favour of the air mass holding more data or use of another method. The artefact has been created with DirectX 12 with the use of miniEngine.</p>
+                    <p>In the end other method currently in use could be combined with airmass and weather fronts to create better flowing weather. </p>
+								<p> You can find it at:<a href="https://github.com/ThomasMillard123/FYP_Weather_System">CRITICAL EVALUATION OF CURRENT WEATHER SYSTEMS GitHub</a></p>
 								<h3>video</h3>
-								<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/560108577?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-									allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FGGC Sem1 vid"></iframe>
-								</div><script src="https://player.vimeo.com/api/player.js"></script>
-								<p>Sem2 key features:</p>
+								<iframe width="100%" height="100%" style="min-height: 400px;" src="https://www.youtube.com/embed/b5HINUTBoVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p>C++|Games programmming|DirectX 12|Win32|3D|miniEngine|Weather system</p>
+								</section>
+
+								<section>
+									<h3>Advanced graphics </h3>
+									<p>This project is an engine I have created using direcX11 and C++.The engine was created to explore programmable graphics pipeline. It also explores how terrain and animation can be performed in an application.
+										The application made is to demonstrate what the engine can do.</p>
+									<p>Some features the engine can perform:</p>
 									<ul>
-											<li>Physics- including: particle  physics for object movement and rigid body physics for rotations </li>
-												<li>particle  physics uses:
-														<ul>
-																<li>Velocity</li>
-																<li>Acceleration</li>
-																<li>Drag- Laminar and Turbulent</li>
-																<li>Friction</li>
-																<li>net force accumulator</li>
-																<li>other forces such a gravity and thrust</li>
-														</ul>
-												</li>
-											<li>Simple collision detection</li>
-											<li>Collision response </li>
-											<li>Mass particle system with rain and smoke</li>
-											<li>Terrain generation useing a hight map</li>
-											<li>Input class using win32 messaging system</li>
-											<li>Built with design patterns</li>
+										<li>Normal Mapping​</li>
+										<li>Parallax Mapping​</li>
+										<li>Mutiple Lights</li>
+										<li>Shadows</li>
+										<li>Post processing:
+											<ul>
+													<li>Gaussian blur</li>
+													<li>colour tint</li>
+													<li>fade</li>
+													<li>Bloom </li>
+													<li>Depth of fiel</li>
+												</ul>
+										</li>
+										<li>Terrain loading and createion:
+											<ul>
+													<li>Raw hight map loading</li>
+													<li>Fault line terrain generation</li>
+													<li>Diamond-Square terrain generation</li>
+													<li>Noise terrain generation</li>
+													<li>Tesslation(Level of detail)</li>
+													<li>Frustum culling is performed on terrain</li>
+													<li>voxle terrain generation</li>
+													<li>Reload terrain from a JSON file</li>
+												</ul>
+										</li>
+										<li>skelatal animation with foward kinematics</li>
+										<li>Billbording useing geometry shader</li>
 									</ul>
+									<p> You can find it at:<a href="https://github.com/ThomasMillard123/FYP_Weather_System"> Advanced graphics </a></p>
+									<div class="slideshow-container">
+										<h3 style="text-align: center">videos</h3>
+										<div class="mySlides1">
+												<iframe width="100%" height="100%" style="min-height: 400px;" src="https://www.youtube.com/embed/c6fddpRHm-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+												allowfullscreen></iframe>
+											</div>
+												<div class="mySlides1">
+											<iframe width="100%" height="100%" style="min-height: 400px;" src="https://www.youtube.com/embed/ZiViN1BcQcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+													</div>
+													<!-- Next and previous buttons -->
+													<a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+													<a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+													</div>
+													<br>
+												<p>C++|Games programmming|DirectX 12|Win32|3D|miniEngine|Weather system</p>
+									</section>
+
+							<section>
+
+								<!-- Slideshow container -->
+								<div class="slideshow-container">
+											<h3 style="text-align: center"> Other Projects</h3>
+
+								<!-- Full-width images with number and caption text -->
+								<div class="mySlides2">
+
+									<section>
+
+										<h3>FGGC- sem1 and sem2 </h3>
+										<span class="image main"><img src="images/FGGC_Immage.png" alt="" /></span>
+										<p>This is a engine created for a my university assignment. It has been created with C++ and DirectX 11.</p>
+										<p>Sem1 key features:</p>
+										<ul>
+												<li>Shaders in HLSL</li>
+												<li>Phong and Gouraud shading</li>
+												<li>OBJ file loader</li>
+												<li>DDS file loader</li>
+												<li>Picking</li>
+												<li>simple movement</li>
+												<li>mutiple cameras:
+													<ul>
+															<li>Static cameras</li>
+															<li>First-person camera</li>
+															<li>Third-person camera</li>
+													</ul>
+
+												</li>
+												<li>Json file loader useing <a href="https://github.com/nlohmann/json">nlohmann json parser</a></li>
+												<li>A skybox using cube mapping</li>
+										</ul>
 										<h3>video</h3>
-									<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/560107601?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-										allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FGGC Sem 2 Vid"></iframe>
-									</div><script src="https://player.vimeo.com/api/player.js"></script>
-								<p> You can find it at:<a href="https://github.com/ThomasMillard123/FGAGC">FGAGC</a></p>
+										<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/560108577?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+											allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FGGC Sem1 vid"></iframe>
+										</div><script src="https://player.vimeo.com/api/player.js"></script>
+
+										<p>Sem2 key features:</p>
+											<ul>
+													<li>Physics- including: particle  physics for object movement and rigid body physics for rotations </li>
+														<li>particle  physics uses:
+																<ul>
+																		<li>Velocity</li>
+																		<li>Acceleration</li>
+																		<li>Drag- Laminar and Turbulent</li>
+																		<li>Friction</li>
+																		<li>net force accumulator</li>
+																		<li>other forces such a gravity and thrust</li>
+																</ul>
+														</li>
+													<li>Simple collision detection</li>
+													<li>Collision response </li>
+													<li>Mass particle system with rain and smoke</li>
+													<li>Terrain generation useing a hight map</li>
+													<li>Input class using win32 messaging system</li>
+													<li>Built with design patterns</li>
+											</ul>
+												<h3>video</h3>
+											<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/560107601?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+												allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FGGC Sem 2 Vid"></iframe>
+											</div><script src="https://player.vimeo.com/api/player.js"></script>
+										<p> You can find it at:<a href="https://github.com/ThomasMillard123/FGAGC">FGAGC</a></p>
+										<p>C++|Games programmming|DirectX 11|3D</p>
+									</section>
+								</div>
+
+								<div class="mySlides2">
+
+									<section>
+										<h3>Pointless and interesting scenes-FOGGS asingment</h3>
+										<span class="image main"><img src="images/FOGGS_Small.PNG" alt="" /></span>
+										<p>This is university project using openGL and C++ to render a 3D scene. The title is Pointless and interesting scenes. It has:</p>
+										<ul>
+											<li>Camera</li>
+											<li>Wavefont (.obj) file loader what can be usde to load models(vehicles)</li>
+											<li>Lights</li>
+											<li>.raw and .bmp image loader</li>
+											<li>Can load meshes from text files (cubes)</li>
+											<li>Can move around using camera movement and object Translations/Transformations</li>
+											<li>a main menu and 2 levels</li>
+											<li>Text within the scene</li>
+										</ul>
+										<p> You can find it at:<a href="https://github.com/ThomasMillard123/OpenGL-Project">OpenGL-Project</a></p>
+										<p>C++|Games programmming|OpenGL|freeGLUT|3D</p>
+									</section>
+								</div>
 
 
-								<p>C++|Games programmming|DirectX 11|3D</p>
-							</section>
+								<!-- Next and previous buttons -->
+								<a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+								</div>
+								<br>
 
-							<section>
-								<h3>Pointless and interesting scenes-FOGGS asingment</h3>
-								<span class=""><img src="images/FOGGS_Small.PNG" alt="" /></span>
-								<p>This is university project using openGL and C++ to render a 3D scene. The title is Pointless and interesting scenes. It has:</p>
-								<ul>
-									<li>Camera</li>
-									<li>Wavefont (.obj) file loader what can be usde to load models(vehicles)</li>
-									<li>Lights</li>
-									<li>.raw and .bmp image loader</li>
-									<li>Can load meshes from text files (cubes)</li>
-									<li>Can move around using camera movement and object Translations/Transformations</li>
-									<li>a main menu and 2 levels</li>
-									<li>Text within the scene</li>
-								</ul>
-								<p> You can find it at:<a href="https://github.com/ThomasMillard123/OpenGL-Project">OpenGL-Project</a></p>
-								<p>C++|Games programmming|OpenGL|freeGLUT|3D</p>
-							</section>
 
-							<section>
-								<h3>Future Projects and Current projects</h3>
-								<ul>
-									<li>C#/wpf: json/XML creator app</li>
-									<li>Weather system creation(FYP)</li>
-									<li>Group Project(2D survival game)</li>
-								</ul>
 							</section>
 							</article>
 
@@ -189,16 +341,30 @@
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="center"><img src="images/ProPic50Samll.png" alt="" /></span>
-								<p>Hello there, my name is Thomas Millard. Welcome to this website. I am a student at Staffordshire University doing a BSc (Hons) Video games programming. I hope one day I will be able to be programming video games.</p>
+								<p>Hello there, my name is Thomas Millard. Welcome to this website. I am a graduate of Staffordshire University, a BSc (Hons) Video games programming. I hope one day I will be able to be programming video games.</p>
 								<p>Through my time in education I have learned coding language such as HTML, CSS, C#, JavaScript and c++. The two languages I have the most knowlage in is C++ and C#.
-									DirectX 11 has been the chosen grapics rendring API that I have use to creat most of my projects.
-									I do have knwloage in WPF and WinForms as well.
+									DirectX 11 has been the chosen grapics rendring API that I have use to creat most of my projects, I have the knowllage to use DirectX 12. With useing DirecX APIs I have learnt HLSL in order to creat shaders.
+									As I created my projects I have learned graphical concepts shuch as post processing and tesslation throught the use of
+									programming the graphics pipeline with the use of shaders. I do have knwloage in WPF and WinForms as well.
 								</p>
 								<p>Things I enjoy are video games and watching esports. The main games I like to play now are LoL (League of legends), Pokemon Legends: Arceus and Riders Republic.
 									My favorite game of all time could be Left for Dead 2 but other games that come close would be Just Cause 2 multiplayer Mod and GTA5(Grand Theft Auto v).
 									Skiing is also something else I do.</p>
 							</article>
+							<!-- Blog -->
+								<article id="blog">
+									<h2 class="major">Blog</h2>
 
+								<nav>
+									<ul>
+										<li><a href="#WEATHER">WEATHER</a></li>
+									</ul>
+								</nav>
+								</article>
+								<article id="WEATHER">
+									<h2 class="major">A Look at Curerrent Weather systems</h2>
+
+									</article>
 						<!-- Contact -->
 								<ul class="icons">
                   <li><a href="https://www.linkedin.com/in/thomas-millard123/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
@@ -219,7 +385,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy;Thomas Millard 2021 </p>
+						<p class="copyright">&copy;Thomas Millard 2022 </p>
 					</footer>
 
 			</div>
@@ -232,7 +398,9 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets/js/slidshow.js"></script>
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>
