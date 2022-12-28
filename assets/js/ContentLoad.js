@@ -1,16 +1,16 @@
 async function populate() {
 
     //const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
-    //const request = new Request(requestURL);
+    const requestURL = 'https://ThomasMillard123.github.io/assets/js/content.json';
+   
+    const request = new Request(requestURL);
 
-    //const response = await fetch(request);
-    //const superHeroesText = await response.text();
+    const response = await fetch(request);
+    const superHeroesText = await response.text();
 
-    var json = $.getJSON("content.json", function (json) {
-        console.log(json); // this will show the info it in firebug console
-    });
+   
 
-    const superHeroes = JSON.parse(json);
+    const superHeroes = JSON.parse(superHeroesText);
     populateHeader(superHeroes);
     //populateHeroes(superHeroes);
 
@@ -18,11 +18,11 @@ async function populate() {
 function populateHeader(obj) {
     const header = document.querySelector('#current_Work');
     const myH1 = document.createElement('h1');
-    myH1.textContent = obj.Veson;
+    myH1.textContent = obj.PageTitle;
     header.appendChild(myH1);
 
     const myPara = document.createElement('p');
-    myPara.textContent = `Hometown: ${obj.Veson} // Formed: ${obj.Veson}`;
+    myPara.textContent = obj.PageDes;
     header.appendChild(myPara);
 }
 
