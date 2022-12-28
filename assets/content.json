@@ -1,17 +1,19 @@
 {
-  "Veson": "Super hero squad"
-  //"Content": [
-  //  {
-  //    "name": "Firelight",
-  //    "HeadImg": "TitleScreen.png",
-  //    "Description1": "This game is a group created game called Firelight. It is a survival game. The engine that was created was called Firelight and a audio engine was created with FMOD called Snowfall.An editor was created to help to develop on the engine but for the most part the engine is designed to work for developing in code. It was created for a university assignment in a group, and it is coded using DirectX 11 and C++. Some of the features of the game and engine are:",
-  //    "Featuers": [ "Entity component system", "Input with key bindings", "Event system", "AI", "Resource system", "Crafting", "Combat", "Items", "An inventory system", "Animation with an editor", "Audio- engine and sound in the game" ],
-  //    "Description2": "I created and developed:",
-  //    "Description3": "Other team members who were important in getting the project to its current state:",
-  //    "GithubLink": "https://github.com/Group2IsCrap/GameEngine",
-  //    "IMG": [ "Radiation resistance", "Turning tiny", "Radiation blast" ],
-  //    "Vid": "https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-  //    "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "2D" ]
-  //  }
-  //]
+  "Veson": 1.0,
+  "PageTitle": "Work",
+  "PageDes": "This is my current completed work",
+  "Content": [
+    {
+      "name": "Firelight",
+      "HeadImg": "TitleScreen.png",
+      "Description1": "This game is a group created game called Firelight. It is a survival game. The engine that was created was called Firelight and a audio engine was created with FMOD called Snowfall.An editor was created to help to develop on the engine but for the most part the engine is designed to work for developing in code. It was created for a university assignment in a group, and it is coded using DirectX 11 and C++. Some of the features of the game and engine are:",
+      "Featuers": [ "Entity component system", "Input with key bindings", "Event system", "AI", "Resource system", "Crafting", "Combat", "Items", "An inventory system", "Animation with an editor", "Audio- engine and sound in the game" ],
+      "Description2": "I created and developed:",
+      "Description3": "Other team members who were important in getting the project to its current state:",
+      "GithubLink": "https://github.com/Group2IsCrap/GameEngine",
+      "IMG": [ "Radiation resistance", "Turning tiny", "Radiation blast" ],
+      "Vid": "https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "2D" ]
+    }
+  ]
 }
