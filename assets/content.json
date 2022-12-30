@@ -27,7 +27,7 @@
       "HeadDes": "This game is a group created game called Molecularity.The game is about changing  a cubes properties using a multi-tool to solve levels. It was created for a university assignment. It is done using DirectX and C++. Some of the features  of the game are:",
       "Featuers": [ "A main menu", "3 levels", "Credits", "A working settings menu", "A hud for the tool information", "Built with design patterns", "Audio-game music and sfx" ],
       "Descriptions": [
-        "The multi-tool:Convert-changes the material which affects mass/density​,Resize- enlarges or shrinks a cube which changes its hitbox and mass​,Bounce- whether the cube bounces​​,Magnetism- either brings a single or all the cubes to the player,Conductive- changes a cube’s conductivity​.I created the UI used in the game except for the DIMGUI used for the debug mode. I also created a json loader file with rapid json to load our text and level data. The base of our tool class in the code was created by me."
+        "The multi-tool:Convert-changes the material which affects mass/density,Resize- enlarges or shrinks a cube which changes its hitbox and mass,Bounce- whether the cube bounces,Magnetism- either brings a single or all the cubes to the player,Conductive- changes a cube’s conductivity.I created the UI used in the game except for the DIMGUI used for the debug mode. I also created a json loader file with rapid json to load our text and level data. The base of our tool class in the code was created by me."
         "Other team members who were important in getting the project to its current state:Kyle Robinson,Ben Shaw,Daniel Wilson,Jacob Dexter"
       ],
       "GithubLink": "https://github.com/kyle-robinson/molecularity",
