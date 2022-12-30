@@ -11,11 +11,11 @@
        "Des": [
           {
           "text":"I created and developed:The UI development system in the engine, The method to get input to the game and engine and The inventory system",
-          "Tags": [ "Null" ]
+          "Tags": "Null" 
         },
         {
           "text": "Other team members who were important in getting the project to its current state:",
-          "Tags": [ "Null" ]
+          "Tags": "Null"
         }
        ],
        "GithubLink": "https://github.com/Group2IsCrap/GameEngine",
