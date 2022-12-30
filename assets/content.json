@@ -27,16 +27,17 @@
       "Vids": [
         {
           "isYoutube": false,
-          "Link": "https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          "Link": "https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+          "Title":"Game"
         }
       ],
       "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "2D" ]
     },
     {
-     "name": "a",
-      "HeadImg": "TitleScreen.png",
-      "HeadDes": "This game is a group created game called Firelight. It is a survival game. The engine that was created was called Firelight and a audio engine was created with FMOD called Snowfall.An editor was created to help to develop on the engine but for the most part the engine is designed to work for developing in code. It was created for a university assignment in a group, and it is coded using DirectX 11 and C++. Some of the features of the game and engine are:",
-      "Featuers": [ "Entity component system", "Input with key bindings", "Event system", "AI", "Resource system", "Crafting", "Combat", "Items", "An inventory system", "Animation with an editor", "Audio- engine and sound in the game" ],
+      "name": "MOLECULARITY",
+      "HeadImg": "TitleCard.png",
+      "HeadDes": "This game is a group created game called Molecularity.The game is about changing  a cubes properties using a multi-tool to solve levels. It was created for a university assignment. It is done using DirectX and C++. Some of the features  of the game are:",
+      "Featuers": [ "A main menu", "3 levels", "Credits", "A working settings menu", "A hud for the tool information", "Built with design patterns", "Audio-game music and sfx" ],
       "Des": [
         {
           "text":"I created and developed:The UI development system in the engine, The method to get input to the game and engine and The inventory system",
@@ -51,15 +52,16 @@
           "Tags": [ "List" ]
         }
       ],
-      "GithubLink": "https://github.com/Group2IsCrap/GameEngine",
+      "GithubLink": "https://github.com/kyle-robinson/molecularity",
       "IMG": [ "Radiation resistance", "Turning tiny", "Radiation blast" ],
       "Vids": [
         {
           "isYoutube": false,
-          "Link": "https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          "Link": "https://player.vimeo.com/video/558943103",
+          "Title":"Game"
         }
       ],
-      "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "2D" ]
+      "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "3D" ]
     }
   ]
 }
