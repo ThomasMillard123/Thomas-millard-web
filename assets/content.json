@@ -3,6 +3,7 @@
   "PageTitle": "Work",
   "PageDes": "This is my current completed work",
   "Content": [
+    {
     "name": "Firelight",
       "HeadImg": "TitleScreen.png",
       "HeadDes": "This game is a group created game called Firelight. It is a survival game. The engine that was created was called Firelight and a audio engine was created with FMOD called Snowfall.An editor was created to help to develop on the engine but for the most part the engine is designed to work for developing in code. It was created for a university assignment in a group, and it is coded using DirectX 11 and C++. Some of the features of the game and engine are:",
