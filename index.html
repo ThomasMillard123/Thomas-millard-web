@@ -10,10 +10,15 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 	</head>
-	<body class="is-preload" onload="populate()">
+	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -39,8 +44,8 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#work">Work</a></li>
 								<li><a href="#about">About</a></li>
-								<li><a href="#blog">Blog</a></li>
-								<li><a href="#current_Work" >Current Work</a></li>
+								<li><a href="#blog" onclick="Set0('.single-item-rtl')">Blog</a></li>
+								<li><a href="#current_Work" onclick="Set0('.single-item')">Current Work</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -123,7 +128,7 @@
 									<p> You can find it at:<a href="https://github.com/Group2IsCrap/GameEngine">Firelight</a></p>
 									<h3>video</h3>
 									<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"
-										title="Game"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+										title="Game"></iframe>
 
 									<p>C++|Games programmming|DirectX 11|Win32|2D</p>
 								</section>
@@ -160,7 +165,7 @@
 								<p> You can find it at:<a href="https://github.com/kyle-robinson/molecularity">Molecularity</a></p>
 								<h3>video</h3>
 								<div style="padding:54.27% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/558943103" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-								</div><script src="https://player.vimeo.com/api/player.js"></script>
+								</div>
 
 								<p>C++|Games programmming|DirectX 11|Win32|3D</p>
 							</section>
@@ -274,7 +279,7 @@
 										<h3>video</h3>
 										<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/560108577?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
 											allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FGGC Sem1 vid"></iframe>
-										</div><script src="https://player.vimeo.com/api/player.js"></script>
+										</div>
 
 										<p>Sem2 key features:</p>
 											<ul>
@@ -299,7 +304,7 @@
 												<h3>video</h3>
 											<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/560107601?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
 												allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FGGC Sem 2 Vid"></iframe>
-											</div><script src="https://player.vimeo.com/api/player.js"></script>
+											</div>
 										<p> You can find it at:<a href="https://github.com/ThomasMillard123/FGAGC">FGAGC</a></p>
 										<p>C++|Games programmming|DirectX 11|3D</p>
 									</section>
@@ -361,7 +366,17 @@
 										<li><a href="#WEATHER">WEATHER</a></li>
 									</ul>
 								</nav>
+									<div class="single-item-rtl">
+										<div class="card"  style="width:200px"><img src="images/TitleScreen.png" class="image main"><div class="container"><h4 style="text-align:center"><b>John Doe</b></h4></div></div>
+										<div class="card"  style="width:200px"><img src="images/TitleCard.png" class="image main"><div class="container"><h4><b>John Doe</b></h4></div></div>
+										<div class="card"  style="width:200px"><img src="images/TitleScreen.png" class="image main"><div class="container"><h4><b>John Doe</b></h4></div></div>
+										<div class="card"  style="width:200px"><img src="images/TitleCard.png" class="image main"><div class="container"><h4><b>John Doe</b></h4></div></div>
+										<div class="card"  style="width:200px"><img src="images/TitleScreen.png" class="image main"><div class="container"><h4><b>John Doe</b></h4></div></div>
+										<div class="card"  style="width:200px"><img src="images/TitleCard.png" class="image main"><div class="container"><h4><b>John Doe</b></h4></div></div>
+									</div>
+
 								</article>
+
 								<article id="WEATHER">
 									<h2 class="major">A Look at Curerrent Weather systems</h2>
 
@@ -371,7 +386,8 @@
 									<!-- Current -->
 										<article id="current_Work">
 
-
+												<section>
+												</section>
 										</article>
 
 
@@ -409,9 +425,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/slidshow.js"></script>
+			<script type="text/javascript" src="slick/slick.min.js"></script>
 			<script src="assets/js/ContentLoad.js"></script>
+			<script src="https://player.vimeo.com/api/player.js"></script>
 			<script src="assets/js/main.js"></script>
 
-
+</script>
+			  </script>
 	</body>
 </html>
