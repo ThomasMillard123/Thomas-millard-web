@@ -23,7 +23,7 @@
         }
       ],
       "GithubLink": "https://github.com/Group2IsCrap/GameEngine",
-      "IMG": [ "Radiation resistance", "Turning tiny", "Radiation blast" ],
+      "IMG": [ "wood_1.png", "wood_2_stack.png", "fiber.png"],
       "Vids": [
         {
           "isYoutube": false,
@@ -53,7 +53,7 @@
         }
       ],
       "GithubLink": "https://github.com/kyle-robinson/molecularity",
-      "IMG": [ "Radiation resistance", "Turning tiny", "Radiation blast" ],
+      "IMG": [ "wood_1.png", "wood_2_stack.png", "fiber.png" ],
       "Vids": [
         {
           "isYoutube": false,
