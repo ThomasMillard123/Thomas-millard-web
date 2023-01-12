@@ -1,37 +1,10 @@
 
 $(document).ready(function () {
     populate();
-    $('.single-item-rtl').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        variableWidth: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
-
-   
+    Set0('.single-item')
 })
 
-
+//reset to 0 pos
 function Set0(Content) {
     $(Content).slick('slickGoTo',0);
 }
@@ -44,20 +17,22 @@ async function populate() {
     const request = new Request(requestURL);
 
     const response = await fetch(request);
-    const superHeroesText = await response.text();
+    const workContentText = await response.text();
 
    
 
-    const superHeroes = JSON.parse(superHeroesText);
-    populateHeader(superHeroes);
-    populateHeroes(superHeroes);
-   
+    const work = JSON.parse(workContentText);
+    populateHeader(work);
+    populateIDCards(work);
+    const Content = work.Content;
+    const length = Content.length / 2;
+
     $('.single-item').slick({
         centerMode: true,
         centerPadding: '60px',
-        slidesToShow: 1,
+        slidesToShow: length,
         initialSlide: 1,
-       
+        focusOnSelect: true,
         responsive: [
         {
             breakpoint: 768,
@@ -65,7 +40,7 @@ async function populate() {
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 1
+                slidesToShow: Content.length / 3,
             }
         },
         {
@@ -80,13 +55,13 @@ async function populate() {
     ]
     });
 
-    $('.single-item').on('afterChange', function (event, slick, currentSlide) { LoadContent(superHeroes, currentSlide)});
-
+    $('.single-item').on('afterChange', function (event, slick, currentSlide) { LoadContent(work, currentSlide)});
+    
 
 
 }
 function populateHeader(obj) {
-    const header = document.querySelector('#current_Work');
+    const header = document.querySelector('#work');
     const myH1 = document.createElement('h1');
     myH1.textContent = obj.PageTitle;
     header.appendChild(myH1);
@@ -96,8 +71,8 @@ function populateHeader(obj) {
     header.appendChild(myPara);
 }
 
-function populateHeroes(obj) {
-    const section = document.querySelector('#current_Work');
+function populateIDCards(obj) {
+    const section = document.querySelector('#work');
     const Content = obj.Content;
     
     const caracel = document.createElement('div');
@@ -159,11 +134,17 @@ function LoadContent(obj, NumberItem)
 
     const myList = document.createElement('ul');
     const List = Content[NumberItem].Featuers;
-        for (const itmes of List) {
+    for (const item of List) {
+        if (item == "Null") {
+            break;
+        }
+        else {
             const list3 = document.createElement('li');
-            list3.textContent = itmes;
+            list3.textContent = item;
             myList.appendChild(list3);
         }
+    }
+
     section.appendChild(myList);
 
     const divDes = document.createElement('div');
@@ -194,7 +175,7 @@ function LoadContent(obj, NumberItem)
     const imgcarr = document.createElement('div');
     imgcarr.classList = 'single-item-img';
     const myH3 = document.createElement('h3');
-    myH3.textContent = "Content";
+    myH3.textContent = "Content and links";
     section.appendChild(myH3);
 
     const VidList = Content[NumberItem].Vids;
@@ -226,15 +207,20 @@ function LoadContent(obj, NumberItem)
  
 
     for (const itmes of imglist) {
-        const div = document.createElement('div');
-        const span1 = document.createElement('span');
-        const img1 = document.createElement('img');
-        span1.className = "image main";
-        img1.style = "max-height:500px";
-        span1.appendChild(img1);
-        img1.src = `images/${itmes}`;
-        div.appendChild(span1);
-        imgcarr.appendChild(div);
+        if (itmes == "Null") {
+            break;
+        }
+        else {
+            const div = document.createElement('div');
+            const span1 = document.createElement('span');
+            const img1 = document.createElement('img');
+            span1.className = "image main";
+            img1.style = "max-height:500px";
+            span1.appendChild(img1);
+            img1.src = `images/${itmes}`;
+            div.appendChild(span1);
+            imgcarr.appendChild(div);
+        }
        
     }
 
@@ -244,6 +230,7 @@ function LoadContent(obj, NumberItem)
         centerMode: true,
         centerPadding: '60px',
         adaptiveHeight: true,
+        
         responsive: [
             {
                 breakpoint: 768,
@@ -257,6 +244,7 @@ function LoadContent(obj, NumberItem)
             {
                 breakpoint: 480,
                 settings: {
+                    dots: true,
                     arrows: false,
                     centerMode: true,
                     centerPadding: '40px',
@@ -267,6 +255,22 @@ function LoadContent(obj, NumberItem)
     });
 
 
+    
+    const GithubbuttionCenter = document.createElement('center');
+   
+    const Githubbuttion = document.createElement('a');
+    Githubbuttion.href = Content[NumberItem].GithubLink;
+    Githubbuttion.style = "width:100%;height:100%;";
+    Githubbuttion.className = "icon brands fa-8x fa-github";
+
+    const GithubbuttionLable = document.createElement('span');
+    GithubbuttionLable.textContent = "GitHub";
+    GithubbuttionLable.className = "label";
+
+    Githubbuttion.appendChild(GithubbuttionLable);
+    GithubbuttionCenter.appendChild(Githubbuttion)
+    section.appendChild(GithubbuttionCenter);
+    
 
     const tag = document.createElement('p');
     const List2 = Content[NumberItem].Tags;
@@ -274,6 +278,9 @@ function LoadContent(obj, NumberItem)
             tag.textContent += "|" + itmes;
 
         }
-        tag.textContent += "|";
-    section.appendChild(tag);
+    tag.textContent += "|";
+
+    const CenterTags = document.createElement('center');
+    CenterTags.appendChild(tag)
+    section.appendChild(CenterTags);
 }
