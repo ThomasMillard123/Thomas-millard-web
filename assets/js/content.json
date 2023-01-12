@@ -1,68 +1,219 @@
-{
-  "Veson": "Super hero squad",
+﻿{
+  "Veson": 1.0,
+  "PageTitle": "Work",
+  "PageDes": "This is my current completed work",
   "Content": [
     {
       "name": "Firelight",
       "HeadImg": "TitleScreen.png",
-      "Description1": "This game is a group created game called Firelight. It is a survival game. The engine that was created was called Firelight and a audio engine was created with FMOD called Snowfall.An editor was created to help to develop on the engine but for the most part the engine is designed to work for developing in code. It was created for a university assignment in a group, and it is coded using DirectX 11 and C++. Some of the features of the game and engine are:",
+      "HeadDes": "Firelight is a survival game where the player must survive in an unknown world. The player must gather resources to upgrade their equipment. To do this the player must harvest resources from plants and rocks as well as kill enemies for their loot. The game was created for a group university project where we built an engine using DirectX 11 and C++. In this project, I focused on creating the initial input system, UI system and inventory system. The project was managed using the scrum methodology. Some of the features of the game and engine are: ",
       "Featuers": [ "Entity component system", "Input with key bindings", "Event system", "AI", "Resource system", "Crafting", "Combat", "Items", "An inventory system", "Animation with an editor", "Audio- engine and sound in the game" ],
-      "Description2": "I created and developed:",
-      "Description3": "Other team members who were important in getting the project to its current state:",
+      "Des": [
+        {
+          "text": "The input system is built using windows messages for keyboard and mouse input as well as Xinput for controller input. These inputs are then passed out to the rest of the engine/game via events. The events for the mouse are right click, left click, middle click, mouse move, mouse move raw scroll up and down. The keyboard is a key press, key up, and keypress once. The controller input sends the controller state as well as events for triggers and stick movement. These captured inputs are then passed onto the key binder and UI system to apply functions to them.",
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": "The UI system uses the Entity component system to create widgets from components. Each component gives functionality to a widget. There are some procreated entities for some basic widgets like buttons and images. Some functionality that can be given to a widget is to make it draggable, ability to perform functions on different mouse click and add text. There is a child-parent system in place which affects the size of the widgets and the ability to group drag. There is also screen scaling using a canvas which sets the default scale of everything that is a child of the canvas.",
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": [ "The inventory system uses the use UI widgets to create a grid of slots for the players' items as well as slots for the players' equipment. The systems allow for the addition of items and removal of items. this can be done through dragging as well as interacting with items. The player equipment slots work by using the item ids to filter out what can and can’t be placed in the slot. If the item can not be placed within the inventory the item will drop on the ground." ],
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": [ "Other team members who were important in getting the project to its current state:" ],
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": [ "Danny Jackson", "Ben Nilsson", "Fergus R Griggs", "Lewis Baillie", "Max A Stockton", "Natalie Harvey", "Kieron Tracey" ],
+          "Tags": [ "List" ]
+        }
+      ],
       "GithubLink": "https://github.com/Group2IsCrap/GameEngine",
-      "IMG": [ "Radiation resistance", "Turning tiny", "Radiation blast" ],
-      "Vid": "https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "2D" ]
+      "IMG": [ "wood_1.png", "wood_2_stack.png", "fiber.png" ],
+      "Vids": [
+        {
+          "isYoutube": false,
+          "Link": "https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+          "Title": "Firelight"
+        }
+      ],
+      "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "2D","Game" ]
     },
     {
-      "name": "Firelight",
-      "HeadImg": "TitleScreen.png",
-      "Description1": "This game is a group created game called Firelight. It is a survival game. The engine that was created was called Firelight and a audio engine was created with FMOD called Snowfall.An editor was created to help to develop on the engine but for the most part the engine is designed to work for developing in code. It was created for a university assignment in a group, and it is coded using DirectX 11 and C++. Some of the features of the game and engine are:",
-      "Featuers": [ "Entity component system", "Input with key bindings", "Event system", "AI", "Resource system", "Crafting", "Combat", "Items", "An inventory system", "Animation with an editor", "Audio- engine and sound in the game" ],
-      "Description2": "I created and developed:",
-      "Description3": "Other team members who were important in getting the project to its current state:",
-      "GithubLink": "https://github.com/Group2IsCrap/GameEngine",
-      "IMG": [ "Radiation resistance", "Turning tiny", "Radiation blast" ],
-      "Vid": "https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "2D" ]
+      "name": "MOLECULARITY",
+      "HeadImg": "TitleCard.png",
+      "HeadDes": "Molecularity is a game build from a custom engine created with DirectX11 and C++. The game is a simple puzzle game where the player must transform cubes properties to perform tasks. In the current version of the game there are 3 levels, each level utilises different properties that can be changed about the cube. The game was created for a university group project. Some of the features of the game and engine are:",
+      "Featuers": [ "A main menu", "3 levels", "Credits", "A working settings menu", "A hud for the tool information", "Built with design patterns", "Audio-game music and sfx" ],
+      "Des": [
+        {
+          "text": "The muti-tool that allows for the player to change the properties of the cube. The properties that can be changed are:",
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": [ "Convert-changes the material which affects mass/density", "Resize- enlarges or shrinks a cube which changes its hitbox and mass", "Bounce- whether the cube bounces", "Magnetism- either brings a single or all the cubes to the player", "Conductive- changes a cube’s conductivity" ],
+          "Tags": [ "List" ]
+        },
+        {
+          "text": "I created the UI used in the game except for the DIMGUI used for the debug mode. The UI was made from scratch and allowed for image, slider, and drop-down widgets. These widgets created the HUD of the game, credits, and the menus. The game has a working setting menu which allows for the change of inputs, Hud size and other settings of the game. I also created a JSON loader with the use of rapid JSON this loaded the text used in the game and level data. The base of our tool class in the code was created by me this class allowed for the tool to determine what function the muti-tool should be performed when the player right clicks.",
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": "Other team members who were important in getting the project to its current state:",
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": [ "Kyle Robinson", "Ben Shaw", "Daniel Wilson", "Jacob Dexter" ],
+          "Tags": [ "List" ]
+        }
+      ],
+      "GithubLink": "https://github.com/kyle-robinson/molecularity",
+      "IMG": [ "dCube.png", "Bounce.png", "Conductivity.png", "MagAll.png", "MagOne.png" ],
+      "Vids": [
+        {
+          "isYoutube": false,
+          "Link": "https://player.vimeo.com/video/558943103",
+          "Title": "MOLECULARITY"
+        }
+      ],
+      "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "3D","Game" ]
     },
     {
-      "name": "Firelight",
-      "HeadImg": "TitleScreen.png",
-      "Description1": "This game is a group created game called Firelight. It is a survival game. The engine that was created was called Firelight and a audio engine was created with FMOD called Snowfall.An editor was created to help to develop on the engine but for the most part the engine is designed to work for developing in code. It was created for a university assignment in a group, and it is coded using DirectX 11 and C++. Some of the features of the game and engine are:",
-      "Featuers": [ "Entity component system", "Input with key bindings", "Event system", "AI", "Resource system", "Crafting", "Combat", "Items", "An inventory system", "Animation with an editor", "Audio- engine and sound in the game" ],
-      "Description2": "I created and developed:",
-      "Description3": "Other team members who were important in getting the project to its current state:",
-      "GithubLink": "https://github.com/Group2IsCrap/GameEngine",
-      "IMG": [ "Radiation resistance", "Turning tiny", "Radiation blast" ],
-      "Vid": "https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "2D" ]
+      "name": "Final Year Project: CRITICAL EVALUATION OF CURRENT WEATHER SYSTEMS",
+      "HeadImg": "main.PNG",
+      "HeadDes": "This is my final year project; it is looking at how the weather is created in games and how it is used for game mechanics. During the exploration of current games, I saw there were lots of methods employed to create weather systems. The use and creation of weather in these games depended on what the game wanted to achieve with the weather and/or the hardware limitations of the game's chosen platform. For example, a simulator game would want the most complex and realistic weather possible, Microsoft flight simulator does this by using real-world data to create weather in their game.",
+      "Featuers": [ "Null", "" ],
+      "Des": [
+        {
+          "text": "In the project, I looked at how real weather works and how this could be translated into games. I also looked at how the more realistic weather system would impact the complexity of the application. I also looked at why are more realistic weather system can be good for a game however it looked at why it would also be a bad thing for a game. ",
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": "The artefact created was to use real-world and current video game concepts to create a weather system. The artefact has been created with DirectX 12 with the use of miniEngine.",
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": "The artefact created used airmass and a grid to hold data, like the temperature at different heights and dew points, to create weather. This system can currently create fog, precipitation (snow, hail, and rain) and clouds. The air masses work well in creating weather fronts for where the weather effects appeared. However, the gid limited how the weather effects were represented as it held a lot of data needed. If the project was going to be improved the removal of the gid would be done in favour of the air mass holding more data or the use of another method. In the end, other methods currently in use could be combined with airmass and weather fronts to create better-flowing weather.",
+          "Tags": [ "Null" ]
+        }
+      ],
+      "GithubLink": "https://github.com/ThomasMillard123/FYP_Weather_System",
+      "IMG": [ "weather2.PNG", "Weather1.PNG" ],
+      "Vids": [
+        {
+          "isYoutube": true,
+          "Link": "https://www.youtube.com/embed/b5HINUTBoVI",
+          "Title": "YouTube video player"
+        }
+      ],
+      "Tags": [ "C++", "DirectX 12", "miniEngine", "3D", "Weather System" ]
+    },
+    {
+      "name": "ADVANCED GRAPHICS",
+      "HeadImg": "avtitle.png",
+      "HeadDes": "This project is an engine I have created using direcX11 and C++ for a university project. The engine was created to explore programmable graphics pipelines and other graphics features. The application made is to demonstrate what the engine can do. Some features of the engine are:",
+      "Featuers": [ "Normal Mapping", "Parallax Mapping", "Multiple Lights that can produce shadows and can be different light types", "Shadows using shadow mapping", "Post-processing including Gaussian blur, colour tint, fade, Bloom, Depth of field", "Terrain creation", "Tessellation", "Animations", "Billboarding using the geometry shader" ],
+      "Des": [
+        {
+          "text": "Terrain can be created in the application via multiple different methods including loading a raw height map, fault line, Dimond-square and noise generation. These terrain load methods create a height map shader resource and in the shader, the heights are applied to the vertex. In the application, the settings for each loading method such as seed, the number of iterations and max height can be changed to build new terrains. The application can also create terrain using voxels this allows for caves and overhangs to be generated in the terrain. The application uses cubes to create this terrain. All the terrain settings can be saved in a JSON file to allow for the terrains created to be rebuilt. To increase the performance of the application tessellation and frustum culling are performed. Allowing for the reduction in the number of triangles drawn.  ",
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": "Skeletal animation is performed with forward kinematics. The system is built with bones which then have animation applied to them in the shader. So each vertex of the model has a bone it is associated with then a weighting so when the animation is applied to the model the vertex move according to how the bone will move.",
+          "Tags": [ "Null" ]
+        }
+      ],
+      "GithubLink": "https://github.com/ThomasMillard123/AvdGra",
+      "IMG": [ "Null" ],
+      "Vids": [
+        {
+          "isYoutube": true,
+          "Link": "https://www.youtube.com/embed/c6fddpRHm-g",
+          "Title": "YouTube video player"
+        },
+        {
+          "isYoutube": true,
+          "Link": "https://www.youtube.com/embed/ZiViN1BcQcM",
+          "Title": "YouTube video player"
+        }
+      ],
+      "Tags": [ "C++", "DirectX 11", "Win32", "3D", "engine" ]
+    },
+    {
+      "name": "FGGC",
+      "HeadImg": "FGGC_Immage.png",
+      "HeadDes": "These are two engines created for my university assignment and they have been created with C++ and DirectX 11. Engine number 1 aims to perform some simple graphical operations like lighting and camera operations. Engine number 2 aims to build upon engine number 1 and explore physics in an engine. The engines aim to explore physics in an engine and some simple graphical operations. Some features the engines are:",
+      "Featuers": [ "Shaders in HLSL", "Phong and Gouraud shading", "OBJ file loader", "DDS file loader", "A skybox using cube mapping", "Cameras including a first person, third person and static cameras", "Picking", "Physics including particle physics for object movement and rigid body physics for rotations", "Simple collision detection and response", "Mass particle system with rain and smoke" ],
+      "Des": [
+        {
+          "text": "Engine number 1 performs picking in a menu, this works by taking creating a ray from the point click by transforming the point from screen space to world space and finds any object that can be hit. Then it performs an action depending on what is hit.",
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": "The physics in engine number 2 using particle physics and rigid body physics. The particle physics uses different forces applied to the object to create a velocity and an acceleration force to move the object. The engine also applies drag and friction to this force to stop the object over time. The application can also move the object by a constant velocity. The rigid body physics is used for rotations using inertia tensor, torque, angular accretion, velocity, drag and quaternions for the angle of the object orientation. This produces a spinning object that slows down over time.",
+          "Tags": [ "Null" ]
+        }
+      ],
+      "GithubLink": "https://github.com/ThomasMillard123/FGAGC",
+      "IMG": [ "Null" ],
+      "Vids": [
+        {
+          "isYoutube": false,
+          "Link": "https://player.vimeo.com/video/560108577?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+          "Title": "Vid 1"
+        },
+        {
+          "isYoutube": false,
+          "Link": "https://player.vimeo.com/video/560107601?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+          "Title": "Vid 2"
+        }
+      ],
+      "Tags": [ "C++", "DirectX 11", "engine", "3D" ]
+    },
+    {
+      "name": "Networked chat application",
+      "HeadImg": "chat.png",
+      "HeadDes": "The networked chat application is a WinForms app that uses a client and a server so users can chat with each other. The app allows users to name themselves and play games with others. This app is Some features of the app are:",
+      "Featuers": [ "TCP and UDP messages", "Packets", "Games", "Private messages", "Nicknames", "Disconnection", "Encryption" ],
+      "Des": [
+        {
+          "text": "The app allows the users to play some simple world games like guessing the number and a quiz. To play these games the users can create a room with the game or if there is a room already running a user can join that. The games wait for several to join players before it starts.",
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": "The app encrypts the data sent to protect the data sent and packets are used to send the data across the network. The app also allows the users to change the colours to dark mode in the settings menu. The app also has a user list, so people know who is on the server at one time. When naming the user can not use a name already in use and when they disconnect it returns them to the name screen not allowing them to look at the chat boxes.",
+          "Tags": [ "Null" ]
+        }
+      ],
+      "GithubLink": "https://github.com/ThomasMillard123/NetworkChatApp",
+      "IMG": [ "chatbox1.PNG", "chatbox2.PNG", "chatbox3.PNG" ],
+      "Vids": [
 
+      ],
+      "Tags": [ "C#", "WinForm", "Networked" ]
     },
     {
-      "name": "Firelight",
-      "HeadImg": "TitleScreen.png",
-      "Description1": "This game is a group created game called Firelight. It is a survival game. The engine that was created was called Firelight and a audio engine was created with FMOD called Snowfall.An editor was created to help to develop on the engine but for the most part the engine is designed to work for developing in code. It was created for a university assignment in a group, and it is coded using DirectX 11 and C++. Some of the features of the game and engine are:",
-      "Featuers": [ "Entity component system", "Input with key bindings", "Event system", "AI", "Resource system", "Crafting", "Combat", "Items", "An inventory system", "Animation with an editor", "Audio- engine and sound in the game" ],
-      "Description2": "I created and developed:",
-      "Description3": "Other team members who were important in getting the project to its current state:",
-      "GithubLink": "https://github.com/Group2IsCrap/GameEngine",
-      "IMG": [ "Radiation resistance", "Turning tiny", "Radiation blast" ],
-      "Vid": "https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "2D" ]
+      "name": "Low Level Programming",
+      "HeadImg": "Low.png",
+      "HeadDes": "The low-level program is a university project that looked at how to optimise a ray tracing application. It also looked at how to use tools to debug or find optimisations. Some features of the project are:",
+      "Featuers": [ "Memory tracking", "Porting to Linux", "Threading", "Memory pools" ],
+      "Des": [
+        {
+          "text": "The memory tracking was implemented by overloading the new operator which gave the memory being stored a header and a footer. The header and footer were used to contain information about the data and were used to error-check the memory. The memory added was tracked in a double-linked list so all the memory stored could be output to see what is in the memory of the application.",
+          "Tags": [ "Null" ]
+        },
+        {
+          "text": "Threading was added in the application to split up the ray tracing algorithm into 4 sections of the screen this sped up the algorithm. Then c style file output was used to improve the output of the data. Memory pools were used in the ray tracing algorithm as this stopped the constant creation and deletion of memory in each frame. When porting to Linux the threads were changed to forks and pipes.",
+          "Tags": [ "Null" ]
+        }
+      ],
+      "GithubLink": "https://github.com/ThomasMillard123/RayTracerSmall_LowLevel",
+      "IMG": [ "Null" ],
+      "Vids": [
 
-    },
-    {
-      "name": "Firelight",
-      "HeadImg": "TitleScreen.png",
-      "Description1": "This game is a group created game called Firelight. It is a survival game. The engine that was created was called Firelight and a audio engine was created with FMOD called Snowfall.An editor was created to help to develop on the engine but for the most part the engine is designed to work for developing in code. It was created for a university assignment in a group, and it is coded using DirectX 11 and C++. Some of the features of the game and engine are:",
-      "Featuers": [ "Entity component system", "Input with key bindings", "Event system", "AI", "Resource system", "Crafting", "Combat", "Items", "An inventory system", "Animation with an editor", "Audio- engine and sound in the game" ],
-      "Description2": "I created and developed:",
-      "Description3": "Other team members who were important in getting the project to its current state:",
-      "GithubLink": "https://github.com/Group2IsCrap/GameEngine",
-      "IMG": [ "Radiation resistance", "Turning tiny", "Radiation blast" ],
-      "Vid": "https://player.vimeo.com/video/714798304?h=7cb8cb60b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      "Tags": [ "C++", "Games programmming", "DirectX 11", "Win32", "2D" ]
-
+      ],
+      "Tags": [ "C++", "Windows", "Linux", "Optimisation" ]
     }
   ]
 }
